@@ -1,0 +1,74 @@
+/* İyi Çalışmalar */
+
+body{
+	background-color: #1d1d1d;
+	color: #fff;
+	margin: 0;
+	height: 10000px;
+}
+.nav-box, .nav-box ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	height: 100%;
+	width: 14%;
+	background-color: #303030;
+	overflow: auto;
+}
+.nav-box li a{
+	text-decoration: none;
+	color: #fff;
+	display:block;
+	padding: 10px 20px;
+	font-size: 16px;
+	font-weight: bold;
+}
+.nav-box li a:hover:not(.active){
+	background-color: #8a6c36;
+}
+.active{
+	background-color: #bf8a2a;
+}
+.nav-box .designer-box{
+	position: absolute;
+	bottom: 0;
+	font-size: 11px;
+	color: #fff;
+	width: 100%;
+	text-align: center;
+}
+.article-box{
+	margin-left: 14%;
+	padding: 1px 18px;
+}
+
+@media screen and (max-width: 900px) {
+	.nav-box, .nav-box ul{
+		width: 100%;
+		height: auto;
+		position: relative;
+	}
+	.nav-box .designer-box{
+		padding: 0 10px;
+		right: 0;
+		width: auto;
+	}
+	.nav-box ul li{
+		float: left;
+	}
+	.article-box{
+		margin-left: 0;
+	}
+	.article-box li a{
+		padding: 15px;
+	}
+}
+@media screen and (max-width: 600px) {
+	.nav-box ul li{
+		float: none;
+	}
+	.nav-box .designer-box{
+		display: none;
+	}
+}
