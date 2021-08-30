@@ -1,0 +1,106 @@
+/* İyi Çalışmalar <3 */
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+
+body{
+	margin: 0;
+	height: 1000px;
+	background-image: linear-gradient(to bottom right, red, blue);
+}
+.nav-box{
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	top: 0;
+}
+.nav-box ul{
+	list-style-type: none;
+	position: fixed;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background-color: #000;
+	overflow: hidden;
+}
+.nav-box ul li{
+	float: left;
+}
+.nav-box li a{
+	display: block;
+	padding: 15px 20px;
+	color: #fff;
+	text-decoration: none;
+	width: 80px;
+	text-align: center;
+	font-weight: bold;
+}
+.nav-box li a i{
+	font-size: 12px;
+	padding: 2px;
+}
+.nav-box li a:hover:not(.active){
+	background-color: orange;
+}
+.nav-box ul li ul li{
+	float: none;
+}
+.nav-box ul li ul{
+	width: auto;
+	display: none;
+}
+.nav-box ul li:hover ul{
+	display: block;
+}
+.active{
+	background-color: #3ae374;
+}
+.login-box{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 25%;
+	height: 36%;
+	background-color: #303030;
+	border-radius: 6px;
+}
+.login-box h1{
+	margin-left: 40%;
+	font-weight: 1;
+	color: #fff;
+}
+.login-box .input-box{
+	width: 100%;
+	text-align: center;
+	margin-top: 25px;
+}
+.login-box .input-box input{
+	background:none;
+	font-size: 15px;
+	outline: none;
+	padding: 10px;
+	color: #fff;
+	border: 2px solid orange;
+	border-radius: 20px;
+	cursor: pointer;
+	text-align: center;
+}
+.login-box .input-box input[type="text"]:focus{
+	font-size: 17px;
+	border-color: #67e6dc;
+	color: #67e6dc;
+}
+.login-box .input-box input[type="password"]:focus{
+	font-size: 17px;
+	border-color: #ff3838;
+	color: #ff3838;
+}
+.login-box .input-box input[type="submit"]:hover{
+	border-color: #3ae374;
+}
+.login-box .web-designer{
+	float: right;
+	color: #fff;
+	font-size: 10px;
+	padding: 5px 10px;
+}
